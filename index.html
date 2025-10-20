@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মেন্টর একাডেমি | Mentor Academy</title>
+    <!-- Tailwind CSS লোড করা হচ্ছে -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a clean, modern look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Tiro+Bangla:ital@0;1&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+        }
+        .bn-font {
+            font-family: 'Tiro Bangla', serif;
+        }
+        /* Custom styles for the Founder section */
+        .founder-card {
+            background: linear-gradient(135deg, #f0f4ff, #e0e7ff);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Navigation Bar -->
+    <header class="bg-indigo-700 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- English Name with Red/Green Colors -->
+            <h1 class="text-3xl font-bold text-white">
+                <span class="text-red-400">Mentor</span> <span class="text-green-300">Academy</span>
+            </h1>
+            <nav class="hidden md:flex space-x-6 text-white text-lg">
+                <a href="#home" class="hover:text-indigo-200 transition duration-300 bn-font">হোম</a>
+                <a href="#updates" class="hover:text-indigo-200 transition duration-300 bn-font">নোটিশ ও আপডেট</a>
+                <a href="#results" class="hover:text-indigo-200 transition duration-300 bn-font">সাফল্যের রেজাল্ট</a>
+                <a href="#about" class="hover:text-indigo-200 transition duration-300 bn-font">আমাদের সম্পর্কে</a>
+                <a href="#contact" class="hover:text-indigo-200 transition duration-300 bn-font">যোগাযোগ</a>
+            </nav>
+            <!-- Mobile Menu Button (Simple for single-page) -->
+            <button class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto">
+        
+        <!-- 1. Hero Section (Home) -->
+        <section id="home" class="bg-white p-8 md:p-16 rounded-b-xl shadow-xl text-center mb-10">
+            <div class="max-w-4xl mx-auto">
+                <!-- Bengali Name with Red/Green Colors -->
+                <h2 class="text-5xl md:text-6xl font-extrabold mb-4 bn-font">
+                    <span class="text-red-600">মেন্টর</span> <span class="text-green-600">একাডেমি</span>
+                </h2>
+                <!-- Slogan - Formal and mission-focused -->
+                <p class="text-xl md:text-2xl text-gray-600 bn-font leading-relaxed">
+                    সঠিক দিকনির্দেশনা ও যত্নের মাধ্যমে শিক্ষার্থীদের ভবিষ্যতের পথ তৈরি করাই আমাদের লক্ষ্য।
+                </p>
+                <!-- CTA - Formal -->
+                <a href="#updates" class="mt-8 inline-block bg-pink-500 text-white text-xl font-semibold px-8 py-3 rounded-full hover:bg-pink-600 transition duration-300 shadow-md transform hover:scale-105 bn-font">
+                    সাম্প্রতিক আপডেটগুলি দেখুন
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. Updates & Announcements Section (Includes Holiday & New Admission) -->
+        <section id="updates" class="p-4 md:p-8">
+            <h3 class="text-4xl font-bold text-center text-indigo-700 mb-8 bn-font">
+                নোটিশ বোর্ড ও সাম্প্রতিক আপডেট
+            </h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <!-- Update Card 1 (Latest - Holiday/Closure) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-500 hover:shadow-xl transition duration-300">
+                    <span class="text-sm font-semibold text-pink-500 bn-font">ছুটির নোটিশ (পয়েন্ট ৩)</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3 bn-font">পূজা উপলক্ষে ছুটি</h4>
+                    <p class="text-gray-600 text-base bn-font">দুর্গাপূজা উপলক্ষে একাডেমি আগামী ৭ দিন বন্ধ থাকবে। ক্লাসের সময়সূচী পরে জানানো হবে।</p>
+                    <a href="#" class="mt-3 inline-block text-indigo-600 hover:text-indigo-800 font-medium bn-font">
+                        বিস্তারিত জেনে নিন &rarr;
+                    </a>
+                </div>
+
+                <!-- Update Card 2 (New Admission - Point 6) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-indigo-500 hover:shadow-xl transition duration-300">
+                    <span class="text-sm font-semibold text-indigo-500 bn-font">ভর্তি আপডেট (পয়েন্ট ৬)</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3 bn-font">নতুন ব্যাচের রেজিস্ট্রেশন শুরু</h4>
+                    <p class="text-gray-600 text-base bn-font">দশম শ্রেণীর নতুন ব্যাচের ভর্তি প্রক্রিয়া শুরু হয়েছে। আসন সীমিত, আজই যোগাযোগ করুন।</p>
+                    <a href="#contact" class="mt-3 inline-block text-indigo-600 hover:text-indigo-800 font-medium bn-font">
+                        যোগাযোগ করুন &rarr;
+                    </a>
+                </div>
+
+                <!-- Update Card 3 (General Notice) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-gray-400 hover:shadow-xl transition duration-300">
+                    <span class="text-sm font-semibold text-gray-500 bn-font">সাধারণ নোটিশ</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3 bn-font">আগামী মাসের রুটিন প্রকাশ</h4>
+                    <p class="text-gray-600 text-base bn-font">অক্টোবর মাসের সম্পূর্ণ ক্লাস রুটিন ওয়েবসাইটে আপলোড করা হয়েছে। দ্রুত ডাউনলোড করে নিন।</p>
+                    <a href="#" class="mt-3 inline-block text-indigo-600 hover:text-indigo-800 font-medium bn-font">
+                        ডাউনলোড লিঙ্ক &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- 3. Results / Achievements Section (Includes Topper List - Points 1 & 2) -->
+        <section id="results" class="bg-indigo-100 p-8 md:p-12 mt-10 rounded-xl">
+            <h3 class="text-4xl font-bold text-center text-indigo-700 mb-8 bn-font">
+                পরীক্ষার ফলাফল ও সাফল্য (পয়েন্ট ১ ও ২)
+            </h3>
+            <div class="space-y-6 max-w-4xl mx-auto">
+
+                <!-- Monthly Result List -->
+                <div class="bg-white p-6 rounded-lg shadow-xl border-t-4 border-pink-600">
+                    <h4 class="text-2xl font-bold text-gray-800 mb-3 bn-font">মাসিক পরীক্ষার টপার তালিকা</h4>
+                    <p class="text-gray-600 mb-4 bn-font">সেপ্টেম্বর মাসের পরীক্ষায় প্রথম, দ্বিতীয় ও তৃতীয় স্থান অধিকারীদের তালিকা নিচে দেওয়া হলো। সবাইকে অভিনন্দন!</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                        <div class="p-3 rounded-lg bg-yellow-100 border-2 border-yellow-500">
+                            <span class="text-3xl font-extrabold text-yellow-600">১ম</span>
+                            <p class="text-lg font-semibold bn-font">[ছাত্র/ছাত্রীর নাম] - [ক্লাস]</p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-gray-200 border-2 border-gray-500">
+                            <span class="text-3xl font-extrabold text-gray-600">২য়</span>
+                            <p class="text-lg font-semibold bn-font">[ছাত্র/ছাত্রীর নাম] - [ক্লাস]</p>
+                        </div>
+                        <div class="p-3 rounded-lg bg-amber-200 border-2 border-amber-600">
+                            <span class="text-3xl font-extrabold text-amber-700">৩য়</span>
+                            <p class="text-lg font-semibold bn-font">[ছাত্র/ছাত্রীর নাম] - [ক্লাস]</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Main Board Result Links -->
+                <div class="space-y-4 pt-4">
+                    <h4 class="text-2xl font-bold text-gray-800 mb-3 bn-font">বোর্ড পরীক্ষার ফলাফল</h4>
+                    <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow-md">
+                        <p class="text-lg font-medium text-gray-700 bn-font">মাধ্যমিক পরীক্ষা (Madhyamik) 2024 - টপার লিস্ট</p>
+                        <a href="placeholder_madhyamik_result.pdf" target="_blank" class="text-green-600 font-bold hover:text-green-800 bn-font">
+                            রেজাল্ট দেখুন &rarr;
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow-md">
+                        <p class="text-lg font-medium text-gray-700 bn-font">উচ্চ মাধ্যমিক পরীক্ষা (HS) 2024 - টপ মার্কস</p>
+                        <a href="placeholder_hs_result.pdf" target="_blank" class="text-green-600 font-bold hover:text-green-800 bn-font">
+                            রেজাল্ট দেখুন &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <p class="text-center pt-4 text-gray-600 bn-font">
+                    আপনার সন্তানের সাফল্য নিশ্চিত করতে আমরা অঙ্গীকারবদ্ধ।
+                </p>
+            </div>
+        </section>
+        
+        <!-- 4. About Us & Founder Section (New Section - Points 4 & 7) -->
+        <section id="about" class="p-4 md:p-8 mt-10">
+            <h3 class="text-4xl font-bold text-center text-indigo-700 mb-10 bn-font">
+                আমাদের সম্পর্কে জানুন (পয়েন্ট ৪ ও ৭)
+            </h3>
+            <div class="max-w-4xl mx-auto space-y-12">
+                <!-- About the Academy -->
+                <div class="bg-white p-8 rounded-xl shadow-xl">
+                    <h4 class="text-3xl font-bold text-indigo-600 mb-4 bn-font">মেন্টর একাডেমি: একটি অঙ্গীকার</h4>
+                    <p class="text-gray-700 text-lg leading-relaxed bn-font">
+                        মেন্টর একাডেমি শুধু একটি কোচিং সেন্টার নয়, এটি এমন একটি প্ল্যাটফর্ম যেখানে প্রতিটি শিক্ষার্থীকে ব্যক্তিগত যত্ন ও মনোযোগ দেওয়া হয়। আমরা বিশ্বাস করি, সঠিক মেন্টরশিপের মাধ্যমেই দুর্বলতম ছাত্রও তার পূর্ণ সম্ভাবনা খুঁজে পেতে পারে। গত [সংখ্যা] বছর ধরে, আমরা [অঞ্চলের নাম] এর শিক্ষার্থীদের সাফল্য এনে দিতে সাহায্য করেছি। আমাদের লক্ষ্য হল শুধুমাত্র ভালো নম্বর নয়, বরং তাদের মধ্যে আত্মবিশ্বাস এবং শেখার আগ্রহ তৈরি করা।
+                    </p>
+                </div>
+
+                <!-- About the Founder (Your Profile) -->
+                <div class="founder-card p-8 rounded-xl shadow-xl border-t-4 border-red-500 text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-red-400 flex items-center justify-center text-white text-4xl font-bold select-none">
+                        A
+                    </div>
+                    <h4 class="text-3xl font-bold text-red-600 mb-2 bn-font">প্রতিষ্ঠাতা ও পরিচালকের কথা</h4>
+                    <p class="text-xl font-semibold text-gray-800 mb-4 bn-font">
+                        [তোমার নাম] | প্রতিষ্ঠাতা ও পরিচালক, <span class="text-red-600">Mentor</span> <span class="text-green-600">Academy</span>
+                    </p>
+                    <p class="text-gray-700 leading-relaxed bn-font italic">
+                        "Mentor Academy প্রতিষ্ঠা করার পেছনে আমার একটাই স্বপ্ন ছিল—শিক্ষা হবে ব্যক্তিগত এবং গভীর। আমি নিজে হাতে প্রতিটি ব্যাচকে গাইড করি এবং নিশ্চিত করি যেন কেউ পিছিয়ে না পড়ে। আমি দৃঢ়ভাবে বিশ্বাস করি, সঠিক পরিচর্যা পেলে প্রতিটি শিক্ষার্থীই সফল হতে পারে।"
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- 5. Contact Section (Point 5) -->
+        <section id="contact" class="p-4 md:p-8 mt-10">
+            <h3 class="text-4xl font-bold text-center text-indigo-700 mb-8 bn-font">
+                যোগাযোগের ঠিকানা (পয়েন্ট ৫)
+            </h3>
+            <div class="max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+                <div class="space-y-4 text-center">
+                    <p class="text-lg bn-font">
+                        <strong class="text-indigo-700">আমাদের ঠিকানা:</strong> <br>
+                        [তোমার অ্যাকাডেমির সম্পূর্ণ ঠিকানা এখানে দিন]
+                    </p>
+                    <p class="text-lg bn-font">
+                        <strong class="text-indigo-700">ফোন:</strong> <br>
+                        +91 [তোমার ফোন নম্বর]
+                    </p>
+                    <p class="text-lg bn-font">
+                        <strong class="text-indigo-700">ইমেল:</strong> <br>
+                        contact@mentoracademy.com
+                    </p>
+                    <p class="pt-4 text-gray-600 bn-font">
+                        আমাদের সম্পর্কে আরও জানতে, আজই যোগাযোগ করুন!
+                    </p>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12 py-6">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm bn-font">
+            &copy; 2025 Mentor Academy. সমস্ত অধিকার সংরক্ষিত।
+        </div>
+    </footer>
+
+</body>
+</html>
+
